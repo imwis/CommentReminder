@@ -1,5 +1,5 @@
 # CommentReminder V1.0.0
-=============
+
 工作在 Typecho 平台的一个基于 Google API 的评论邮件提醒插件。
 本插件有几个地方参考了 CommentToMail 插件的实现方式，在此表示感谢。
 
