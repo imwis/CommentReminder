@@ -212,9 +212,7 @@ class CommentReminder_Plugin implements Typecho_Plugin_Interface
         $tokenDir = dirname(__FILE__) .'/token';
 
         // 检查目录是否可写
-        if(is_writeable($tokenDir) == false) return;
-
-        $dir = scandir($tokenDir);
+        if(is_writeable($tokenDir) == false) return; 
 
         // 创建随机文件名文件防止被下载
         file_put_contents($tokenDir .'/gmail_access_token_'. Typecho_Common::randString(20) .'.json', '', LOCK_EX);
